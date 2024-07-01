@@ -1,0 +1,138 @@
+body{
+    background-image: url("gb.jpg");
+    background-size: cover; /* This will scale the image to cover the entire container */
+  background-position: end; /* This will center the image */
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  overflow: hidden;
+}
+
+#content{
+  height: 75vh;
+  user-select: text;
+  width: 55%;
+  border: 3px solid black;
+  border-radius: 35px;
+  background-color: rgba(255, 255, 255, 0.7);
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  backdrop-filter: blur(2px);
+}
+
+#oras{
+  font-size: 40px;
+  margin-top: 5%;
+}
+
+input{
+  background-color: transparent;
+  border: 0;
+  border-bottom: 2px solid black;
+  width: 25vh;
+  font-size: 20px;
+}
+
+input[type="text"]:focus {
+  border: none;
+  border-bottom: 2px solid black;
+  outline: none;
+
+}
+.fa-magnifying-glass{
+  font-size: 20px;
+  cursor: pointer;
+}
+
+#grade{
+  height: 40%;
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+}
+
+#grade>div{
+  height: 100%;
+  width: 33%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#grade>div>div{
+  margin: 5%;
+  text-align: center;
+}
+
+#grade>div>div{
+  margin: 5%;
+  text-align: center;
+}
+
+#temperatura{
+  font-size: 50px;
+}
+#chenar-mare{
+  font-size: 25px;
+}
+
+#saptamana{
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+  align-items:center;
+  text-align: end;
+}
+
+.maxima{
+  font-size: 35px;
+}
+
+#scris{
+  font-size: 35px;
+  margin-bottom: 3%;
+}
+
+#saptamana>div>div{
+  margin: 15%;
+  
+}
+
+.loader-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    position: fixed;
+    width: 100%;
+    background-color: white;
+  }
+  
+  .loader {
+    margin: auto;
+    width: 10vh;
+    background-color: white;
+    height: 10vh;
+    background-color: #FF5C35;
+    animation: spin 2s cubic-bezier(0.68, -0.55, 0.27, 1.55) infinite;
+  }
+  
+  @keyframes spin {
+    0%, 100% {
+      transform: scale(1) rotate(0deg);
+    }
+    50% {
+      transform: scale(0.5) rotate(180deg);
+    }
+  }
