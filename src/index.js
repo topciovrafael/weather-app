@@ -9,7 +9,7 @@ import incarcarePagina from './pagina';
 incarcarePagina();
 
 let oras;
-let API_KEY='7dad2eb8b23f480c8b0163859243006';
+let API_KEY='97950b7d44a643daa6f90928241309';
 let info=[];
 
 let containerLoader=document.createElement("div");
